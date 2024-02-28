@@ -81,7 +81,7 @@ To use Google Assistant, your Home Assistant configuration has to be [externally
     8. Go to **Keys** and **Add key**.
     9. Create a private key in JSON format.
     10. This will start a download of a JSON file.
-        1. Rename the file to `SERVICE_ACCOUNT.JSON`.
+        1. Rename the file to `SERVICE_ACCOUNT.json`.
         2. Add this file to your config-folder. This will be the same folder as your `configuration.yaml`.
     11. Go back to [Google Cloud Platform](https://console.cloud.google.com/) and select **Close**.
     12. Then select **Save**.
@@ -173,7 +173,7 @@ Now add your setup to your `configuration.yaml` file, such as:
 # Example configuration.yaml entry
 google_assistant:
   project_id: YOUR_PROJECT_ID
-  service_account: !include SERVICE_ACCOUNT.JSON
+  service_account: !include SERVICE_ACCOUNT.json
   report_state: true
   exposed_domains:
     - switch
